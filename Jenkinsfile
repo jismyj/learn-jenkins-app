@@ -57,6 +57,7 @@ pipeline {
     post {
         always {
             junit 'test-results/junit.xml'
+            playwright 'playwright-report/index.html'
         }
     }
 }
