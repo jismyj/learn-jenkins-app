@@ -27,6 +27,7 @@ pipeline {
                     if test -f "/build/index.html"; then
                         echo "File exists."
                     fi
+                    npm test
                 '''
             }
         }
