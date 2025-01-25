@@ -23,6 +23,11 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Test stage'
+                sh '''
+                    if test -f /build/index.html; then
+                        echo "File exists."
+                    fi
+                '''
             }
         }
     }
